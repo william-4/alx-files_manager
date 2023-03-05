@@ -1,0 +1,34 @@
+import { createClient } from 'redis';
+
+
+class RedisClient {
+		constructor() {
+				const client = createClient();
+				
+				client.on('error', (error) => {
+						console.log(error);
+				})
+		}
+
+		function isAlive() {
+				if (client.connect) {
+						return (true);
+				}
+				return (false);
+		}
+
+		async function get(key) {
+				await const value = client.get(key);
+				return (value);
+		}
+
+		async function set(key, value, duration) {
+				await client.setex(key, duration, value);
+		}
+
+		async function del(key) {
+				await client.del(key);
+		}
+}
+
+export const redisClient = RedisClient();

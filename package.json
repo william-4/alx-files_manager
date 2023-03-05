@@ -1,0 +1,28 @@
+{
+  "name": "alx-files_manager",
+  "version": "1.0.0",
+  "description": "> how to create an API with Express",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/william-4/alx-files_manager.git"
+  },
+  "author": "william-4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/william-4/alx-files_manager/issues"
+  },
+  "homepage": "https://github.com/william-4/alx-files_manager#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.4.3",
+    "eslint": "^8.35.0",
+    "jest": "^29.4.3",
+    "redis": "^4.6.5"
+  }
+}
